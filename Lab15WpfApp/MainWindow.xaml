@@ -1,0 +1,168 @@
+﻿<Window x:Class="Lab15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="500" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="C:\Users\MrBase\Downloads\Lab15WpfApp-master\Lab15WpfApp-master\Lab15WpfApp\Data/1.jpg" 
+                                   x:Name="Курс"/>
+                        </BlockUIContainer>
+                    </Floater>
+
+                    <Bold>
+                        Высочайшая вершина Великобритании южнее Шотландского высокогорья.
+                        <Hyperlink NavigateUri ="http://edu.bim.vc/">
+                            <Run Foreground="Red">Сноудон.</Run>
+                        </Hyperlink>
+                    </Bold>
+                </Paragraph>
+
+                <Paragraph>
+                    Гора
+                    <Italic>Сноудон или Ир-Уитва</Italic> находится в
+                    <Italic>национальном парке Сноудония в округе Гуинет.</Italic>
+                    Вершина Сноудона известна как Yr Wyddfa (курган) и находится 
+                    на высоте 1085 метров над уровнем моря. Название «Сноудон» происходит от древнеанглийского Snow Dun, означающего «снежный холм».
+
+                </Paragraph>
+
+                <Paragraph>
+                    <Underline>Топография:</Underline>
+                </Paragraph>
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Сноудон имеет шесть хребтов: крутые и скалистые хребты на севере и востоке, мелкие и травянистые, 
+                            но более удалённые на юге и на западе. 
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Есть много каров, образованных оледенением в ледниковый период, 
+                            некоторые из них заполнены талыми водами.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            С вершины Сноудона открывается один из самых обширных видов 
+                            на Британских островах, в ясные дни оттуда видна Ирландия (Республика Ирландия и Северная Ирландия), 
+                            Шотландия, Англия и остров Мэн, а также 24 графства, 29 озёр и 17 островов.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <Section FontSize="17">
+                    <Table Background="#FFEDEDED">
+                        <Table.Columns>
+                            <TableColumn Width="*"/>
+                            <TableColumn Width="4*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph FontSize="16" FontWeight="Bold" TextAlignment="Center" Foreground="Red">
+                                        Факт
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph FontSize="16" FontWeight="Bold" TextAlignment="Center" Foreground="Red">
+                                        Иллюстрация
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph TextAlignment="Center">
+                                        Первое задокументированное восхождение на Сноудон было совершено в 1639 году ботаником Томасом Джонсоном.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph TextAlignment="Center">
+                                        <Border>
+                                            <Border.Effect>
+                                                <DropShadowEffect Color ="Black" Direction ="40" ShadowDepth="20" Opacity="0.2"/>
+                                            </Border.Effect>
+                                            <Image Source="C:\Users\MrBase\Downloads\Lab15WpfApp-master\Lab15WpfApp-master\Lab15WpfApp\Data/восхождение.jpg" 
+                                                   Width="400" Height="400" x:Name="Revit"/>
+                                        </Border>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph TextAlignment="Center">
+                                        В 1896 году была проложена Сноудонская горная железная дорога, 
+                                        на конечной станции, недалеко от вершины, была построена гостиница, в 1930-е она была заменена рестораном.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph TextAlignment="Center">
+                                        <Border>
+                                            <Border.Effect>
+                                                <DropShadowEffect Color ="Black" Direction ="40" ShadowDepth="20" Opacity="0.2"/>
+                                            </Border.Effect>
+                                            <Image Source="C:\Users\MrBase\Downloads\Lab15WpfApp-master\Lab15WpfApp-master\Lab15WpfApp\Data/жд.jpeg" 
+                                                   Width="400" Height="400" x:Name="Renga"/>
+                                        </Border>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph TextAlignment="Center">
+                                        Титул графа Сноудона был присвоен мелкому валлийскому дворянину Армстронг-Джонсу 
+                                        по случаю его брака с сестрой английской королевы, Маргарет, в 1960 году.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell BorderBrush="Red" BorderThickness="1" Padding="5">
+                                    <Paragraph TextAlignment="Center">
+                                        <Border>
+                                            <Border.Effect>
+                                                <DropShadowEffect Color ="Black" Direction ="40" ShadowDepth="20" Opacity="0.2"/>
+                                            </Border.Effect>
+                                            <Image Source="C:\Users\MrBase\Downloads\Lab15WpfApp-master\Lab15WpfApp-master\Lab15WpfApp\Data/маргарэт.jpg" 
+                                                   Width="400" Height="400" x:Name="ModelStudio"/>
+                                        </Border>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+
+                <Paragraph>
+                    <Run Foreground="Red">Информация для статьи была взята из открытого источника:</Run> 
+                    Wikipedia.org
+                </Paragraph>
+
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Ссылка на оригинал статьи в интернете"/>
+                        <Button Content="https://ru.wikipedia.org/wiki/Сноудон" Background="Red" Foreground="White"/>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
